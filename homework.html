@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<h1>JavaScript Questions  Answers</h1>
+
+<h2>Section A: Conditional Statements</h2>
+
+<p>A conditional statement allows a program to make decisions based on conditions.</p>
+
+<p>Types: <b>if</b>, <b>if...else</b>, <b>else if</b>, <b>switch</b>.</li></p>
+
+
+<pre>
+if (condition) {
+    // code
+}
+</pre>
+</li>
+
+<li><b>if</b> executes code only when condition is true, while <b>if...else</b> provides an alternative when false.</li>
+
+<li><b>else if</b> checks multiple conditions in sequence.</li>
+
+let num = 5;
+if (num > 0) {
+    console.log("Positive");
+} else if (num < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}
+
+ <p>The program skips all blocks and exits the conditional structure.
+The <b>switch</b> statement selects execution paths based on matching cases.
+switch compares fixed values, if...else handles complex conditions switch is cleaner for many cases</p>
+
+
+
+let day = 3;
+switch(day) {
+    case 1: console.log("Monday"); break;
+    case 2: console.log("Tuesday"); break;
+    case 3: console.log("Wednesday"); break;
+    default: console.log("Invalid day");
+}
+</pre>
+</li>
+</ol>
+
+<h2>Section B: Loops</h2>
+<ol start="11">
+<li>A loop repeats a block of code while a condition is true.</li>
+
+<p>for, while, do...while
+</p>
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+
+<li>When the number of iterations is unknown.</li>
+
+<li>
+<pre>
+while (condition) {
+
+}
+</pre>
+</li>
+
+<li><b>while</b> checks before execution, <b>do...while</b> runs at least once.</li>
+
+<li>
+<pre>
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+</pre>
+</li>
+
+<li>An infinite loop runs forever.</li>
+
+<li>Forgetting to update the loop condition.</li>
+
+<li>Ensure the loop condition eventually becomes false.</li>
+
+<li><b>break</b> stops the loop immediately.</li>
+
+<li><b>continue</b> skips the current iteration.</li>
+
+<li>
+<pre>
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) continue;
+    console.log(i);
+}
+</pre>
+</li>
+
+<li>The loop body will not execute.</li>
+
+<li>Displaying items in a shopping cart.</li>
+</ol>
+
+<h2>Section C: Boolean Data Type and Expressions</h2>
+<ol start="26">
+<li>A Boolean represents true or false.</li>
+
+<li>true and false</li>
+
+<li>An expression that evaluates to true or false.</li>
+
+<li><code>5 > 3</code>, <code>10 === 10</code></li>
+
+<li>They combine conditions logically.</li>
+
+<li>&& (AND), || (OR), ! (NOT)</li>
+
+<li>false</li>
+
+<li>true</li>
+
+<li>It reverses the Boolean value.</li>
+
+<li><code>num > 10 && num < 50</code></li>
+</ol>
+
+<h2>Section D: Prefix and Postfix Operators</h2>
+<ol start="36">
+<li>The increment operator (++) increases a value by 1.</li>
+
+<p>The decrement operator (--) decreases a value by 1.</p>
+let x = 5;
+x--;
+<p>Prefix updates before use, postfix updates after use.</p>
+
+>
+  let a = 5;
+ ++a;
+ console.log(a);
+ let b = 5;
+ b++;
+ console.log(b);
+
+
+<li>Output: 5</li>
+
+<li>Value of x: 6</li>
+
+<li>Output: 11</li>
+
+<p>Prefix increments first, postfix increments later.</p>
+let x = 5;
+console.log(--x);
+console.log(x--);
+Section E: Mixed Questions
+<ol start="46">
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 !== 0) console.log(i);
+}
+
+let n = 4;
+if (n % 2 === 0)
+    console.log("Even");
+else
+    console.log("Odd");
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+age >= 18
+Boolean values determine which code blocks execute
+</body>
+</html>
