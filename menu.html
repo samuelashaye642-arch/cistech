@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+   <header>
+    <nav class="body">
+       <h1>The <span>yummy</span> place</h1>
+      <!-- <img src="Foodfun/imgi_1_logo.png" alt=""> -->
+      <div>
+      <a href="food2.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="cotn.html">contact</a>
+      <!-- <a href="">Elements</a> -->
+        <a href="#"><i>🛒</i></a>
+    </div>
+    </nav >
+    <nav class="ven">
+      <h1> The <span>yummy</span> place 
+         </h1>  <p>Tasty Bites and More</p>
+    </nav>
+  </header>
+    <main>
+    <p class="spe">
+      Our Special
+    </p>
+    <h2 class="our"> Menu</h2>
+    <div class="van">
+      <div>
+       <img class="goed" src="img/imgi_5_breakfast-1.jpg" alt=""> 
+      </div>
+      <div class="isaac">
+        <div class="hop">
+       <h3 class="ta" >Spaghetti Bolognese</h3>
+        <p class="non">$ 29</p>
+        </div>
+     
+        <!-- <h3 class="ta">with potatoes</h3> -->
+        <p class="meat">
+          meat,Spaghetti,
+          <br>sprrng oninos
+        </p>
+        <br>
+        <!-- <p class="meat">Tomatoe</p> -->
+      <button class="goo" title="tooltip"
+        onclick="
+        alert('add to cartount')";>
+        Order now  
+        </button>
+      </div>
+       <div>
+       <img class="goed"  src="img/imgi_6_breakfast-2.jpg" alt=""> 
+      </div>
+      <div class="isaac">
+        <div class="hop">
+          <h3 class="ta">Tacos</h3>
+        <p class="non">$ 29</p>   
+        </div>
+     
+        <!-- <h3 class="ta">with potatoes</h3> -->
+        <p class="meat">
+        Grilled meat,cucuba,<br>
+        salad
+        </p>
+        <!-- <p class="meat">Tomatoe</p> -->
+     <button class="goo" title="tooltip"
+        onclick="
+        alert('add to cartount')";>
+        Order now  
+        </button>
+      </div>  
+       <div class="isaac">
+        <div class="hop">
+          <h3 class="ta">mexican Lasange</h3>
+        <p class="non">$ 29</p>  
+        </div>
+      
+        <!-- <h3 class="ta">with potatoes</h3> -->
+        <p class="meat">
+          meat,plantian
+        </p>
+        <br>
+        <!-- <p class="meat">Tomatoe</p> -->
+        <button class="goo" title="tooltip"
+        onclick="
+        alert('add to cartount')";>
+        Order now  
+        </button>
+        
+      </div>
+       <div>
+       <img class="goed"  src="img/imgi_7_breakfast-3.jpg" alt=""> 
+      </div> 
+      <div class="isaac">
+        <div class="hop">
+        <h3 class="ta">French fries</h3>
+        <p class="non">$ 29</p>   
+        </div>
+       
+        <!-- <h3 class="ta">with potatoes</h3> -->
+        <p class="meat">
+          meat,potatoes,rice
+        </p>
+        <p class="meat">Tomatoe</p>
+      <button class="goo" title="tooltip"
+        onclick="
+        alert('add to cartount')";>
+        Order now  
+        </button>
+      </div><div>
+       <img class="goed"  src="./img/imgi_11_breakfast-5.jpg" alt=""> 
+      </div>
+       <div>
+       <img class="goed"  src="./img/imgi_12_breakfast-6.jpg" alt=""> 
+      </div>
+      <div class="isaac">
+        <div class="hop">
+        <h3 class="ta">Caesar salad</h3>
+        <p class="non">$ 29</p>  
+        </div>
+        
+        <!-- <h3 class="ta">with potatoes</h3> -->
+        <p class="meat">
+          egg,oninos,salad
+        </p>
+        <p class="meat">Tomatoe</p>
+        <button class="goo" title="tooltip"
+        onclick="
+        alert('add to cartount')";>
+        Order now  
+        </button>
+      </div>
+       <div>
+       <img  class="goed" src="img/imgi_6_breakfast-2.jpg" alt=""> 
+      </div>
+      <div class="isaac">
+        <div class="hop">
+         <h3 class="ta">Tacos</h3> 
+        <p class="non">$ 29</p>  
+        </div>
+            <p class="meat">
+        Grilled meat,cucuba,<br>
+        salad
+        </p>
+        <button class="goo" title="tooltip"
+        onclick="
+        alert('add to cartount')";>
+        Order now  
+        </button>
+      </div>
+    </div>
+  </main>
+    <script>
+    const addToCartButtons = document.querySelectorAll('.isaac button');
+    const cartIcon = document.querySelector(".body i")
+    let cartCount = 0;
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click',() =>{
+        cartCount++;
+        cartIcon.textContent = cartCount;
+      });
+    })
+  </script>
+</body>
+</html>
