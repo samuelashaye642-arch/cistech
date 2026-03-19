@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background-image: url(Foodfun/imgi_17_banner-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+}
+.body{
+  background-color: white;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13vh;
+  position: absolute;
+  left:14rem;
+  top: 40px;
+  gap: 700px;
+  border-radius: 20px;
+  transition: all ease-in 1s;
+  /* animation: b ease-out infinite; */
+  animation: bounce 1s ease-out infinite;
+  /* margin-left: 29vh; */
+  /* margin-top: 40px; */
+}
+.body h1{
+  color: #ffb606;
+}
+body h1 span{
+  color: #131230;
+}
+@keyframes bounce{
+  0%,
+  100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+}
+.body div a{
+  color:#131230 ;
+  font-family: Robotosans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.body div{
+  gap:30px ;
+  display: flex;
+}
+.ven{
+  position: absolute;
+  top: 27rem;
+  left: 50rem;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.ven h1,p{
+  color: white;
+  font-style: italic;
+}
+.ven h1{
+  font-size: 4.9rem;
+}
+.ven p{
+   margin-left: 140px;
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.vv{
+  margin-left: 120px;
+}
+.ven h1 span{
+  color: #ffb606;
+} 
+.ben{
+  color: black;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+.van{
+  display: grid;
+  grid-template-columns: repeat(4,390px);
+  grid-template-rows: repeat(3,300px);
+  justify-content: center;
+  align-items: center;
+}
+.goed{
+  width:390px;
+  height:300px ;
+}
+.ta{
+ color:RGB(51, 51, 51); 
+ font-family:PoppinsArialsans-serif;
+ font-size:30px ;
+ font-weight:600;  
+ position:relative;
+ bottom:40px ;
+ margin-left:20px;
+}
+.isaac{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color:#ffffff; 
+  height:30.98vh ;
+  border: 1px solid rgba(0, 0, 0, 0.114);
+}
+.meat{
+  color: RGBA(0, 0, 0, 0.8);
+  font-family: PoppinsArialsans-serif;
+  font-size:25px ;
+  font-weight: 400;
+  position: relative;
+  bottom: 30px;
+  margin-left:20px;
+}
+.goo{
+  background-color:  #ffb606;
+  width: 50%;
+  height: 6vh;
+  /* color: white; */
+  font-weight: bolder;
+  font-size: 25px;
+  border:none ;
+  border-radius: 20px;
+   margin-left:20px;
+   cursor: pointer;
+     transition: all ease-in 1s;
+  animation: bounce 1s ease-out infinite;
+}
+@keyframes bounce{
+  0%,
+  100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+}
+.gon{
+  background-image: url(img/imgi_2_bg_2.jpg);
+  height: 110vh;
+  background-size: cover;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.dad{
+  color: #ffb606;
+  font-family:"Great Vibes"cursive ;
+  font-size:100px ;
+  font-weight:400 ;
+  position: relative;
+  bottom:60px;
+}
+.te{
+  color: rgba(37, 36, 36, 0.956);
+  font-family:PoppinsArialsans-serif ;
+  font-size:90px ;
+  font-weight:900 ;
+  text-align: center;
+    position: relative;
+  bottom:180px;
+}
+.action{
+  display: flex;
+  gap: 260px;
+  position: relative;
+  bottom:200px;
+}
+.fuch{
+  display: flex;
+  flex-direction: column;
+}
+.fuTh{
+  display: flex;
+  flex-direction: column;
+  margin-left: -250px;
+}
+label{
+  text-align: left;
+  color: rgb(17, 16, 16);
+  font-size: 30px;
+}
+.mom{
+  background-color: white;
+  width: 50%;
+  height: 80vh;
+ justify-content: center;
+ display: flex;
+ flex-direction: column;
+   align-items: center;
+   gap:50px;
+   margin-left: -700px;
+}
+input{
+  /* margin-right: 20px; */
+  height: 7vh;
+  width:210%;
+  padding: 7px;
+  border: 1px  #ffb606 solid ;
+}
+.vnn{
+  background-color:  #ffb606;
+  height: 7vh;
+  width: 40%;
+  padding: 5px;
+  color: white;
+  border: none;
+  margin-top: -200px;
+}
+.vnn:hover{
+  /* transform: translate(20px,-20px); */
+  background-color:#131230 ;
+  transition: all ease-out 2s ;
+  /* border: 1px  #ffb606 solid; */
+  color: yellow;
+  animation: bounce 1s ease-out infinite;
+}
+@keyframes bounce{
+  0%,
+  100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+}
